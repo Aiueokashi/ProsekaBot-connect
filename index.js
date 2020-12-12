@@ -40,10 +40,7 @@ client.on('ready', async ready => {
 				.setFooter(`${client.user.tag} ディレクトリ:ProsekaBot`)
 		);
 	});
-});
-
-client.on('ready', async ready => {
-	sendtime[client.channels.cache.get('777400049893113876')] = Date.now();
+  sendtime[client.channels.cache.get('777400049893113876')] = Date.now();
 	const logchannel2 = client.channels.cache.get('777400049893113876');
 	logchannel2.send('pinging...').then(function(t) {
 		t.edit(
